@@ -1,0 +1,450 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+@-webkit-keyframes anim {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes anim {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url(/abs-adult-athlete-1229356.jpg) center no-repeat/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(/abs-adult-athlete-1229356.jpg) center no-repeat/cover;
+  height: 100vh;
+}
+
+header .banner-head {
+  -webkit-animation: anim 2s;
+          animation: anim 2s;
+}
+
+header .banner-text {
+  -webkit-animation: anim 2s 1s backwards;
+          animation: anim 2s 1s backwards;
+}
+
+header .custom-nav {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.7)));
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+  padding: 12px 10px;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+header .custom-nav .link-item {
+  color: #f7f0f5;
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 1px;
+  letter-spacing: 1px;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+
+header .custom-nav .link-item:hover {
+  color: #034078;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+
+header .custom-nav .active-link {
+  color: #034078;
+}
+
+header .custom-nav .navbar-brand {
+  font-size: 30px;
+  color: #f7f0f5;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+
+header .custom-nav .navbar-brand:hover {
+  color: #034078;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+
+header .custom-nav .navbar-toggler {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+header .custom-nav .navbar-toggler:focus {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+header .custom-nav .navbar-toggler .line1,
+header .custom-nav .navbar-toggler .line2,
+header .custom-nav .navbar-toggler .line3 {
+  background: #f7f0f5;
+  width: 25px;
+  height: 2px;
+  margin: 5px;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+
+header .nav-menu {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.7)));
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+  padding: 25px 10px;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+header .nav-menu .link-item {
+  color: #f7f0f5;
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 1px;
+  letter-spacing: 1px;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+
+header .nav-menu .link-item:hover {
+  color: #034078;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+
+header .nav-menu .active-link {
+  color: #034078;
+}
+
+header .nav-menu .navbar-brand {
+  font-size: 30px;
+  color: #f7f0f5;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+
+header .nav-menu .navbar-brand:hover {
+  color: #034078;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+
+header .nav-menu .navbar-toggler {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+header .nav-menu .navbar-toggler:focus {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+header .nav-menu .navbar-toggler .line1,
+header .nav-menu .navbar-toggler .line2,
+header .nav-menu .navbar-toggler .line3 {
+  background: #f7f0f5;
+  width: 30px;
+  height: 2px;
+  margin: 7px;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+
+header .change .line1 {
+  -webkit-transform: rotate(-405deg) translate(-6px, 6px);
+          transform: rotate(-405deg) translate(-6px, 6px);
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+
+header .change .line2 {
+  opacity: 0;
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+
+header .change .line3 {
+  -webkit-transform: rotate(405deg) translate(-6px, -6px);
+          transform: rotate(405deg) translate(-6px, -6px);
+  -webkit-transition: all linear 0.5s;
+  transition: all linear 0.5s;
+}
+
+header .head {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  color: #f7f0f5;
+}
+
+.blog {
+  background: #080705;
+}
+
+.blog .underline {
+  border: 3px solid;
+  width: 20%;
+  margin: auto;
+}
+
+.blog .card-body {
+  background: #080705;
+  color: #f7f0f5;
+  text-align: center;
+}
+
+.statement {
+  height: 45vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.7))), url(../img/adult-beautiful-biceps-1554824.jpg) no-repeat center fixed/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../img/adult-beautiful-biceps-1554824.jpg) no-repeat center fixed/cover;
+}
+
+.statement .text {
+  position: absolute;
+  -webkit-transform: translate(-19px, 100px);
+          transform: translate(-19px, 100px);
+}
+
+@-webkit-keyframes left {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes left {
+  0% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes right {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes right {
+  0% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bottom {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bottom {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.left {
+  -webkit-animation-name: left;
+          animation-name: left;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.right {
+  -webkit-animation-name: right;
+          animation-name: right;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.bottom {
+  -webkit-animation-name: bottom;
+          animation-name: bottom;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.pricing .underline-price {
+  border: 3px solid;
+  width: 20%;
+  margin: auto;
+}
+
+.pricing .price-card {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.9))), url(../img/bodybuilding-close-up-dumbbells-260352.jpg) no-repeat center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(../img/bodybuilding-close-up-dumbbells-260352.jpg) no-repeat center/cover;
+  color: #f7f0f5;
+  -webkit-box-shadow: 2px 4px 20px 1px #080705;
+          box-shadow: 2px 4px 20px 1px #080705;
+  border-radius: 5px;
+}
+
+.pricing .price-card .price-button {
+  background: #f7f0f5;
+  color: #080705;
+  border-radius: 30px;
+  padding: 11px;
+  height: 30px;
+  width: 100%;
+  text-decoration: none;
+  -webkit-box-shadow: 2px 4px 20px 1px #080705;
+          box-shadow: 2px 4px 20px 1px #080705;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+  font-size: 15px;
+}
+
+.pricing .price-card .price-button:hover {
+  background: #034078;
+  color: #f7f0f5;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+  -webkit-box-shadow: 2px 4px 20px 1px #080705;
+          box-shadow: 2px 4px 20px 1px #080705;
+}
+
+.contact {
+  height: 100vh;
+  background: linear-gradient(105deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 50%, transparent 50%), url(../img/abs-active-athlete-1431282.jpg) no-repeat center/cover;
+}
+
+.contact .form-group {
+  margin-top: 20%;
+  margin-right: 10%;
+}
+
+.contact .form-group .form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 2px groove #f7f0f5;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+.contact .form-group .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 3px groove #034078;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  color: #f7f0f5;
+}
+
+.contact .contact-btn {
+  width: 100%;
+  margin-right: 10%;
+  border-radius: 50px;
+  height: 35px;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+
+.contact .contact-btn:hover {
+  background: #034078;
+  color: #f7f0f5;
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  border: none;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.footer {
+  background: #080705;
+}
+/*# sourceMappingURL=style.css.map */
